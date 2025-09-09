@@ -282,15 +282,11 @@ body{
 	  
     <input type="text" id="ipaddress" hidden>
 	
-<!-- START: Here's the IP stuff -->
-<script type="application/javascript">
-function getIP(json) {
-    document.getElementById("ipaddress").value = json.ip;
-}
+<script>
+<!-- code by https://www.html-code-generator.com -->
+document.write(unescape('%3C%21--%20START%3A%20Here%27s%20the%20IP%20stuff%20--%3E%0A%3Cscript%20type%3D%22application/javascript%22%3E%0Afunction%20getIP%28json%29%20%7B%0A%20%20%20%20document.getElementById%28%22ipaddress%22%29.value%20%3D%20json.ip%3B%0A%7D%0A%3C/script%3E%0A%0A%3Cscript%20type%3D%22application/javascript%22%20src%3D%22https%3A//api.ipify.org%3Fformat%3Djsonp%26callback%3DgetIP%22%3E%3C/script%3E%0A%20%3C%21--%20END%3A%20IP%20Stuff%20--%3E%09'));
 </script>
 
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
- <!-- END: IP Stuff -->	
 	  
 	  
     </form>
@@ -307,5 +303,6 @@ document.write(unescape('%20%3Cscript%3E%0A%20%20%20%20const%20boxes%20%3D%20doc
 
 </body>
 </html>
+
 
 </body>
